@@ -15,17 +15,6 @@ def encode(n):
             x[y] = str(x[y])
     return "".join(x)
 
-def decode(n):
-    x = []
-    for i in str(n):
-        x.append(int(i))
-    for y in range(len(x)):
-        x[y] = x[y] - 3
-        if x[y] <= 0:
-            x[y] = str(10 + x[y])
-        else:
-            x[y] = str(x[y])
-    return "".join(x)
 
 
 def main():x
